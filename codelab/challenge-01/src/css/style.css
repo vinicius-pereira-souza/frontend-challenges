@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #121214;
+}
+
+.page-header {
+  padding: 64px 24px;
+  background-color: #17171a;
+}
+
+.page-header div {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #e07b67;
+  margin-bottom: 48px;
+  font-family: "Space Grotesk", serif;
+  text-align: center;
+}
+
+.page-header h1 span {
+  color: #fff;
+}
+
+form {
+  display: block;
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  color: #afabb6;
+  outline: none;
+  background-color: #202024;
+  border: 2px solid #252529;
+}
+
+section {
+  padding: 80px 24px 40px 24px;
+}
+
+section > div {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+article {
+  background-color: #17171a;
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 40px;
+  border: 2px solid #252529;
+}
+
+article[data-select="active"] {
+  border-color: #e07b67;
+}
+
+article header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+article span {
+  font-family: "Inter", serif;
+  color: #e07b67;
+  font-size: 16px;
+  margin-right: auto;
+}
+
+article button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  font-size: 32px;
+  color: #e07b67;
+}
+
+article h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #fff;
+  font-family: "Space Grotesk", serif;
+}
+
+article p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #afabb6;
+  line-height: 32px;
+  font-family: "Inter", serif;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 64px 32px;
+  }
+
+  section {
+    padding: 56px 24px 18px 24px;
+  }
+
+  article header {
+    margin-bottom: 24px;
+  }
+
+  article span {
+    font-size: 14px;
+  }
+
+  article button {
+    font-size: 24px;
+  }
+
+  article h2 {
+    font-size: 20px;
+  }
+
+  article p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
+
+@media (max-width: 375px) {
+  .page-header {
+    padding: 48px 24px;
+  }
+
+  .page-header h1 {
+    font-size: 25px;
+    margin-bottom: 32px;
+  }
+
+  section {
+    padding: 40px 24px 0px 24px;
+  }
+
+  article {
+    padding: 32px 24px;
+  }
+
+  article header {
+    margin-bottom: 20px;
+  }
+
+  article span {
+    font-size: 12px;
+  }
+
+  article button {
+    font-size: 20px;
+  }
+
+  article h2 {
+    font-size: 20px;
+    line-height: 25.52px;
+  }
+
+  article p {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+}
