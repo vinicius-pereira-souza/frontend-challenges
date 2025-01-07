@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+span {
+  display: block;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.free {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.11px;
+  text-align: center;
+  color: #121214;
+  background-color: #f3f7ff;
+  padding: 19px 12px;
+}
+
+.header-content {
+  padding: 95px 12px;
+  background-image: url("../images/image-michael-jordan.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  color: #fff;
+}
+
+.header-content-center {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+.box-logo {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26.11px;
+  display: flex;
+  align-items: center;
+  row-gap: 8px;
+  margin-bottom: 40px;
+}
+
+.header-content-center h1 {
+  font-size: 32px;
+  line-height: 34.82px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.header-content-center p {
+  max-width: 540px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+}
+
+.product-container {
+  padding: 80px 12px;
+  text-align: center;
+}
+
+.product-container h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 34.82px;
+  margin-bottom: 32px;
+}
+
+.product-container p {
+  max-width: 593px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.6px;
+  margin-bottom: 32px;
+}
+
+.product-center-grid {
+  max-width: 1216px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 384px));
+  align-items: center;
+  justify-content: center;
+  column-gap: 32px;
+  row-gap: 40px;
+  margin-top: 72px;
+  text-align: left;
+}
+
+article > section {
+  background-color: #f3f7ff;
+  padding: 32px 12px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+article div h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  margin-bottom: 12px;
+}
+
+.product-center-grid article span:first-of-type {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17.71px;
+  margin-bottom: 24px;
+  color: #7ca2f4;
+}
+
+.product-center-grid article span:last-of-type {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25.52px;
+  color: #121214;
+}
+
+@media (max-width: 765px) {
+  .free {
+    font-size: 16px;
+    line-height: 17.41px;
+    padding: 12px;
+  }
+
+  .header-content {
+    padding: 99px 32px;
+    background-image: url("../images/image-michael-jordan-tablet.png");
+  }
+
+  .box-logo {
+    font-size: 18px;
+    line-height: 19.58px;
+  }
+
+  .header-content-center h1 {
+    font-size: 24px;
+    line-height: 26.11px;
+    margin-bottom: 12px;
+  }
+
+  .header-content-center p {
+    max-width: 400px;
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+
+  .product-container {
+    padding: 52px 32px;
+  }
+
+  .product-container h2 {
+    font-size: 24px;
+    line-height: 26.11px;
+    margin-bottom: 12px;
+  }
+
+  .product-container p {
+    max-width: 550px;
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-bottom: 40px;
+  }
+
+  .product-center-grid {
+    grid-template-columns: repeat(2, minmax(auto, 336px));
+    row-gap: 40px;
+  }
+
+  article div h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.4px;
+    margin-bottom: 12px;
+  }
+
+  .product-center-grid article span:first-of-type {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .free {
+    font-size: 14px;
+    line-height: 15.23px;
+  }
+
+  .header-content {
+    padding: 91px 24px;
+    background-image: url("../images/image-michael-jordan-mobile.png");
+  }
+
+  .header-content-center p {
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  .product-container {
+    padding: 56px 32px;
+  }
+
+  .product-container h2 {
+    font-size: 20px;
+    line-height: 21.76px;
+  }
+
+  .product-container p {
+    max-width: 550px;
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+
+  .product-center-grid {
+    grid-template-columns: 1fr;
+  }
+
+  article div h3 {
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  .product-center-grid article span:first-of-type {
+    font-size: 16px;
+  }
+}
