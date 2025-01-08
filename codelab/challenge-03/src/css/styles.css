@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 18px;
+  color: #121214;
+}
+
+.container-center {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+header {
+  padding: 50px 24px;
+  background-color: #f8f8ff;
+}
+
+.header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.header_content section:first-of-type {
+  max-width: 582px;
+}
+
+.header_content h1 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+
+.header_content h1 span {
+  color: #846aff;
+}
+
+.header_content p {
+  max-width: 530px;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
+.header_content a {
+  padding: 14px 32px;
+  background-color: #846aff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+main {
+  padding: 80px 24px;
+}
+
+main h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37.5px;
+  margin-bottom: 113px;
+}
+
+.articles_container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 384px));
+  row-gap: 48px;
+  column-gap: 32px;
+  align-items: start;
+  justify-content: center;
+}
+
+article div {
+  padding: 32px 24px;
+  border: 2px solid #f8f8ff;
+  border-radius: 0 0 4px 4px;
+}
+
+article div h1 {
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+article div p {
+  line-height: 27px;
+}
+
+footer {
+  padding: 80px 24px;
+  background-color: #f8f8ff;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 32px;
+  line-height: 37.5px;
+  font-weight: 600;
+  margin-bottom: 48px;
+}
+
+form {
+  max-width: 592px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  display: block;
+  padding: 19px 24px;
+  border: 1px solid #eaeaea;
+  border-radius: 1px;
+  color: #7c7c8a;
+}
+
+:is(input, textarea)::placeholder {
+  color: #7c7c8a;
+  font-size: 18px;
+  line-height: 21.09px;
+}
+
+input:is([type="text"], [type="email"]) {
+  margin-bottom: 24px;
+}
+
+textarea {
+  min-height: 150px;
+  margin-bottom: 40px;
+  resize: none;
+}
+
+input[type="submit"] {
+  padding: 14px 32px;
+  background-color: #846aff;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 64px 24px;
+  }
+
+  .header_content {
+    max-width: 465px;
+    flex-direction: column-reverse;
+    row-gap: 24px;
+    text-align: center;
+  }
+
+  .header_content section:last-of-type {
+    max-width: 330px;
+  }
+
+  .header_content h1 {
+    font-size: 32px;
+    line-height: 38.4px;
+    margin-bottom: 24px;
+  }
+
+  .header_content p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .header_content a {
+    width: max-content;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+  }
+
+  main {
+    padding: 79px 24px;
+  }
+
+  main h2 {
+    font-size: 28px;
+    line-height: 32.81px;
+    margin-bottom: 56px;
+  }
+
+  .articles_container {
+    grid-template-columns: repeat(2, minmax(auto, 335px));
+  }
+
+  article div {
+    padding: 24px 18px;
+  }
+
+  article div h1 {
+    font-size: 17px;
+    line-height: 23.4px;
+  }
+
+  article div p {
+    line-height: 21px;
+  }
+
+  footer {
+    padding: 82px 32px;
+    text-align: left;
+  }
+
+  footer h2 {
+    font-size: 28px;
+    line-height: 32.81px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+}
+
+@media (max-width: 465px) {
+  .header_content section:last-of-type {
+    max-width: 207px;
+  }
+
+  .header_content h1 {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+
+  .header_content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .header_content a {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 16.41px;
+  }
+
+  main {
+    padding: 64px 24px;
+  }
+
+  main h2 {
+    font-size: 24px;
+    line-height: 28.13px;
+    margin-bottom: 40px;
+  }
+
+  .articles_container {
+    grid-template-columns: 291px;
+  }
+
+  article div h1 {
+    font-size: 18px;
+    overflow-x: hidden;
+    text-decoration: double;
+  }
+
+  footer {
+    padding: 64px 32px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  input,
+  textarea {
+    padding: 16px 18px;
+  }
+
+  :is(input, textarea)::placeholder {
+    font-size: 14px;
+    line-height: 16.41px;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+}
